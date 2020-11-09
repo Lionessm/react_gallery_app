@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import './App.css';
 import SearchForm from "./SearchForm";
 import Nav from "./MainNav";
+import PhotoContainer from "./PhotoContainer";
+import NotFound from "./NotFound";
 
 class App extends Component {
     render() {
@@ -9,6 +11,8 @@ class App extends Component {
             <div className="container">
                 <SearchForm />
                 <Nav />
+                <PhotoContainer />
+                <NotFound />
             </div>
         );
     }
