@@ -20,20 +20,17 @@ export default class App extends Component {
         };
     }
 
-    performSearch = (query) => {
-        console.log("the perfom is called")
-        console.log("Query " , query)
+    performSearch = async (query) => {
         let flickr = new Flickr(apiKey);
 
-        flickr.photos.search({
+        const response = await flickr.photos.search({
             tags: query
-        }).then( (res) => {
-            this.setState ({
-                images: res.body.photos
-            });
-            console.log('yay!', res.body.photos);
-        }).catch( (err) => {
-            console.error('bonk', err);
+        });
+
+        const photosWithURL = await callMap(response);
+
+        this.setState ({
+            images: photosWithURL
         });
     }
 
@@ -43,12 +40,30 @@ export default class App extends Component {
                 <div className="container">
                     <SearchForm onSearch={this.performSearch} />
                     <Nav onClickHandle={this.performSearch}/>
-                    <PhotoContainer />
+                    <PhotoContainer data={this.state.images} />
                     <Route exact path="/notFound" component={NotFound}/>
                 </div>
             </BrowserRouter>
         );
     }
+}
+
+const callMap = async (response) => {
+    let flickr = new Flickr(apiKey);
+
+    // This map returns an array of photos with their URL and ID
+    const photosWithURL = await Promise.all(response.body.photos.photo.map(async (photo) => {
+        const res = await flickr.photos.getSizes({
+            photo_id: photo.id
+        });
+
+        return {
+            url: res.body.sizes.size[1].source,
+            id: photo.id
+        };
+    }));
+
+    return photosWithURL;
 }
 
 
