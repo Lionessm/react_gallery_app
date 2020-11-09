@@ -15,7 +15,7 @@ export default class SearchForm extends Component {
         e.preventDefault();
         e.currentTarget.reset();
     }
-    
+
     render() {
         return (
             <form className="search-form">

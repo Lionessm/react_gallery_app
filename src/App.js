@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import axios from 'axios';
 import {
     BrowserRouter,
     Route
@@ -13,12 +14,31 @@ import Config from "./config";
 
 let apiKey = Config;
 
-class App extends Component {
+export default class App extends Component {
+    constructor() {
+        super();
+        this.state = {
+            images: []
+        };
+    }
+
+    performSearch = (query) => {
+        axios.get(`http://api.giphy.com/v1/gifs/search?q=funny+cat&api_key=dc6zaTOxFJmzC`)
+            .then( response => {
+                this.setState ({
+                    images: response.data.data
+                });
+            })
+            .catch(error => {
+                console.log('Error fetching and parsing data')
+            })
+    }
+
     render() {
         return (
             <BrowserRouter>
                 <div className="container">
-                    <SearchForm  />
+                    <SearchForm onSearch={this.performSearch} />
                     <Nav />
                     <PhotoContainer />
                     <Route exact path="/notFound" component={NotFound}/>
@@ -28,4 +48,4 @@ class App extends Component {
     }
 }
 
-export default App;
+
