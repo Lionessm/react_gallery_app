@@ -42,7 +42,7 @@ export default class App extends Component {
             <BrowserRouter>
                 <div className="container">
                     <SearchForm onSearch={this.performSearch} />
-                    <Nav />
+                    <Nav onClickHandle={this.performSearch}/>
                     <PhotoContainer />
                     <Route exact path="/notFound" component={NotFound}/>
                 </div>
