@@ -4,6 +4,9 @@ import SearchForm from "./SearchForm";
 import Nav from "./MainNav";
 import PhotoContainer from "./PhotoContainer";
 import NotFound from "./NotFound";
+import Config from "./config";
+
+let apiKey = Config;
 
 class App extends Component {
     render() {
