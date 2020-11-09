@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import Flickr from "flickr-sdk";
-import axios from 'axios';
 import {
     BrowserRouter,
     Route
