@@ -20,7 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="76d9d459-5e13-40f6-8673-c81167dece1e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/SearchForm.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/SearchForm.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SearchForm.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SearchForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/SearchForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +56,11 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
@@ -72,7 +84,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1604922340096</updated>
-      <workItem from="1604922341157" duration="1167000" />
+      <workItem from="1604922341157" duration="2571000" />
     </task>
     <servers />
   </component>
@@ -96,5 +108,9 @@
       <screen x="0" y="23" width="1440" height="789" />
     </state>
     <state x="428" y="226" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.789@0.23.1440.789" timestamp="1604922511955" />
+    <state x="316" y="255" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1604924943526">
+      <screen x="0" y="23" width="1440" height="789" />
+    </state>
+    <state x="316" y="255" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.789@0.23.1440.789" timestamp="1604924943526" />
   </component>
 </project>

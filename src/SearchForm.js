@@ -1,5 +1,5 @@
-import logo from './logo.svg';
-import './SearchForm.css';
+import React from 'react';
+import './index.css';
 
 function SearchForm() {
     return (
