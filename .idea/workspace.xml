@@ -21,10 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="76d9d459-5e13-40f6-8673-c81167dece1e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SearchForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/SearchForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MainNav.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainNav.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +86,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1604922340096</updated>
-      <workItem from="1604922341157" duration="13371000" />
+      <workItem from="1604922341157" duration="15474000" />
     </task>
     <servers />
   </component>
@@ -116,6 +114,10 @@
       <screen x="0" y="23" width="1440" height="789" />
     </state>
     <state x="316" y="255" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.789@0.23.1440.789" timestamp="1604924943526" />
+    <state x="481" y="179" width="598" height="490" key="find.popup" timestamp="1604938310579">
+      <screen x="0" y="23" width="1440" height="789" />
+    </state>
+    <state x="481" y="179" width="598" height="490" key="find.popup/0.23.1440.789@0.23.1440.789" timestamp="1604938310579" />
     <state x="445" y="136" width="670" height="676" key="search.everywhere.popup" timestamp="1604936746950">
       <screen x="0" y="23" width="1440" height="789" />
     </state>
