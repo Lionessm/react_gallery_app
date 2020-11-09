@@ -1,5 +1,4 @@
 import React from 'react';
-import './index.css';
 
 function SearchForm() {
     return (
@@ -13,7 +12,6 @@ function SearchForm() {
                 </svg>
             </button>
         </form>
-
     );
 }
 
