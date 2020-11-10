@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import Flickr from "flickr-sdk";
-import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import './App.css';
 import SearchForm from "./SearchForm";
 import Nav from "./MainNav";
@@ -32,11 +31,11 @@ export default class General extends Component {
 
     render() {
         return (
-            <BrowserRouter>
-                <Route path='/' component={SearchForm} onSearch={this.performSearch} />
-                <Route path='/' component={Nav} onClickHandle={this.performSearch}/>
-                <Route path='/' component={PhotoContainer} data={this.state.images} />
-            </BrowserRouter>
+            <div>
+                <SearchForm onSearch={this.performSearch} />
+                <Nav onClickHandle={this.performSearch}/>
+                <PhotoContainer data={this.state.images} />
+            </div>
         );
     }
 }
