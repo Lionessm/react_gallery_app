@@ -1,69 +1,27 @@
 import React, {Component} from 'react';
-import Flickr from "flickr-sdk";
-import {
-    BrowserRouter,
-    Route
-} from 'react-router-dom';
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import './App.css';
-import SearchForm from "./SearchForm";
-import Nav from "./MainNav";
-import PhotoContainer from "./PhotoContainer";
 import NotFound from "./NotFound";
-import apiKey from "./config";
+import General from "./General";
 
 
 export default class App extends Component {
     constructor() {
         super();
-        this.state = {
-            images: []
-        };
-    }
-
-    performSearch = async (query) => {
-        let flickr = new Flickr(apiKey);
-
-        const response = await flickr.photos.search({
-            tags: query
-        });
-
-        const photosWithURL = await callMap(response);
-
-        this.setState ({
-            images: photosWithURL
-        });
     }
 
     render() {
         return (
             <BrowserRouter>
                 <div className="container">
-                    <SearchForm onSearch={this.performSearch} />
-                    <Nav onClickHandle={this.performSearch}/>
-                    <PhotoContainer data={this.state.images} />
-                    <Route exact path="/notFound" component={NotFound}/>
+                <Switch>
+                    <Route exact path='/' component={General} />
+                    <Route path='/search/:query' component={General} />
+                    <Route component={NotFound}/>
+                </Switch>
                 </div>
             </BrowserRouter>
         );
     }
 }
-
-const callMap = async (response) => {
-    let flickr = new Flickr(apiKey);
-
-    // This map returns an array of photos with their URL and ID
-    const photosWithURL = await Promise.all(response.body.photos.photo.map(async (photo) => {
-        const res = await flickr.photos.getSizes({
-            photo_id: photo.id
-        });
-
-        return {
-            url: res.body.sizes.size[1].source,
-            id: photo.id
-        };
-    }));
-
-    return photosWithURL;
-}
-
 

@@ -12,7 +12,7 @@ export default class Nav extends Component {
         return (
             <nav className="main-nav">
                 <ul>
-                    <li><NavLink to='/cats' onClick={this.handleClick}>Cats</NavLink></li>
+                    <li><NavLink to='/<cats>' onClick={this.handleClick}>Cats</NavLink></li>
                     <li><NavLink to='/dogs' onClick={this.handleClick}>Dogs</NavLink></li>
                     <li><NavLink to='/unicorns' onClick={this.handleClick}>Unicorns</NavLink></li>
                 </ul>
