@@ -2,7 +2,8 @@ import React, {Component} from 'react';
 import Flickr from "flickr-sdk";
 import {
     BrowserRouter,
-    Route
+    Route,
+    Switch
 } from 'react-router-dom';
 import './App.css';
 import SearchForm from "./SearchForm";
@@ -40,7 +41,11 @@ export default class App extends Component {
                 <div className="container">
                     <SearchForm onSearch={this.performSearch} />
                     <Nav onClickHandle={this.performSearch}/>
-                    <PhotoContainer data={this.state.images} />
+                    <Switch>
+                        <Route path='/cats' component={PhotoContainer} data={this.state.images} />
+                        <Route path='/dogs' component={PhotoContainer} data={this.state.images} />
+                        <Route path='/unicorns' component={PhotoContainer} data={this.state.images} />
+                    </Switch>
                     <Route exact path="/notFound" component={NotFound}/>
                 </div>
             </BrowserRouter>
