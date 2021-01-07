@@ -5,8 +5,7 @@ import apiKey from "./config";
 import request from "sync-request";
 
 const PhotoContainer = (props) => {
-
-    const searchQuery = props.match.params.searchQuery;
+    const searchQuery = props.match.params.searchQuery ? props.match.params.searchQuery : 'cats';
 
     // Get the photos from the API in a sync way.
     const res = request('GET', `https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=${apiKey}&per_page=5&tags=${searchQuery}&format=json&nojsoncallback=1`);

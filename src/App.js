@@ -20,6 +20,7 @@ export default class App extends Component {
                     <SearchForm/>
                     <Nav/>
                     <Route path="/:searchQuery" component={PhotoContainer}/>
+                    <Route exact path="/" component={PhotoContainer}/>
                 </div>
             </BrowserRouter>
         );
