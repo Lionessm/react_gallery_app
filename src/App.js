@@ -16,59 +16,19 @@ import apiKey from "./config";
 export default class App extends Component {
     constructor() {
         super();
-        this.state = {
-            images: []
-        };
-    }
-
-    performSearch = async (query) => {
-        let flickr = new Flickr(apiKey);
-
-        const response = await flickr.photos.search({
-            tags: query
-        });
-
-        const photosWithURL = await callMap(response);
-
-        this.setState ({
-            images: photosWithURL
-        });
     }
 
     render() {
         return (
             <BrowserRouter>
                 <div className="container">
-                    <SearchForm onSearch={this.performSearch} />
-                    <Nav onClickHandle={this.performSearch}/>
-                    <Switch>
-                        <Route path='/cats' component={PhotoContainer} data={this.state.images} />
-                        <Route path='/dogs' component={PhotoContainer} data={this.state.images} />
-                        <Route path='/unicorns' component={PhotoContainer} data={this.state.images} />
-                    </Switch>
-                    <Route exact path="/notFound" component={NotFound}/>
+                    <Route path="/search/:searchQuery" component={PhotoContainer} data={this.images}/>
                 </div>
             </BrowserRouter>
         );
     }
 }
 
-const callMap = async (response) => {
-    let flickr = new Flickr(apiKey);
 
-    // This map returns an array of photos with their URL and ID
-    const photosWithURL = await Promise.all(response.body.photos.photo.map(async (photo) => {
-        const res = await flickr.photos.getSizes({
-            photo_id: photo.id
-        });
-
-        return {
-            url: res.body.sizes.size[1].source,
-            id: photo.id
-        };
-    }));
-
-    return photosWithURL;
-}
 
 
