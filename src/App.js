@@ -1,10 +1,11 @@
 import React, {Component} from 'react';
 import {
-    BrowserRouter, NavLink, Route
+    BrowserRouter, Route
 } from 'react-router-dom';
 import './App.css';
 import PhotoContainer from "./PhotoContainer";
 import SearchForm from "./SearchForm";
+import Nav from "./MainNav";
 
 
 export default class App extends Component {
@@ -17,14 +18,8 @@ export default class App extends Component {
             <BrowserRouter>
                 <div className="container">
                     <SearchForm/>
-                    <nav className="main-nav">
-                        <ul>
-                            <li><NavLink to='/cats'>Cats</NavLink></li>
-                            <li><NavLink to='/dogs'>Dogs</NavLink></li>
-                            <li><NavLink to='/unicorns'>Unicorns</NavLink></li>
-                        </ul>
-                    </nav>
-                    <Route path="/:searchQuery" component={PhotoContainer} data={this.images}/>
+                    <Nav/>
+                    <Route path="/:searchQuery" component={PhotoContainer}/>
                 </div>
             </BrowserRouter>
         );
