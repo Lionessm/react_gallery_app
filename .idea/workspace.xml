@@ -20,7 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="76d9d459-5e13-40f6-8673-c81167dece1e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/PhotoContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/PhotoContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SearchForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/SearchForm.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,9 +111,10 @@
       <screen x="0" y="23" width="1440" height="789" />
     </state>
     <state x="428" y="226" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.789@0.23.1440.789" timestamp="1604922511955" />
-    <state x="316" y="255" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1604924943526">
-      <screen x="0" y="23" width="1440" height="789" />
+    <state x="316" y="252" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1610025936737">
+      <screen x="0" y="23" width="1440" height="779" />
     </state>
+    <state x="316" y="252" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.779@0.23.1440.779" timestamp="1610025936737" />
     <state x="316" y="255" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.789@0.23.1440.789" timestamp="1604924943526" />
     <state x="481" y="179" width="598" height="490" key="find.popup" timestamp="1604938310579">
       <screen x="0" y="23" width="1440" height="789" />
