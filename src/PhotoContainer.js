@@ -20,6 +20,7 @@ const PhotoContainer = (props) => {
         photosURLs.push(`http://farm3.static.flickr.com/2531/${photo.id}_${photo.secret}_b.jpg`);
     });
 
+    // Iterate through results of photos.
     let pictures = photosURLs.map(url =>
         <Photo url={url} key={url}/>
     );
