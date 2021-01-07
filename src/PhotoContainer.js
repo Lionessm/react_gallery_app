@@ -13,7 +13,6 @@ const PhotoContainer = (props) => {
     const response = res.getBody();
     const photos = JSON.parse(response).photos.photo;
 
-
     const photosURLs = [];
     photos.forEach((photo) => {
         photosURLs.push(`http://farm3.static.flickr.com/2531/${photo.id}_${photo.secret}_b.jpg`);
