@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import Flickr from "flickr-sdk";
 import {
-    BrowserRouter,
+    BrowserRouter, NavLink,
     Route,
     Switch
 } from 'react-router-dom';
@@ -22,7 +22,14 @@ export default class App extends Component {
         return (
             <BrowserRouter>
                 <div className="container">
-                    <Route path="/search/:searchQuery" component={PhotoContainer} data={this.images}/>
+                    <nav className="main-nav">
+                        <ul>
+                            <li><NavLink to='/cats' onClick={this.handleClick}>Cats</NavLink></li>
+                            <li><NavLink to='/dogs' onClick={this.handleClick}>Dogs</NavLink></li>
+                            <li><NavLink to='/unicorns' onClick={this.handleClick}>Unicorns</NavLink></li>
+                        </ul>
+                    </nav>
+                    <Route path="/:searchQuery" component={PhotoContainer} data={this.images}/>
                 </div>
             </BrowserRouter>
         );
