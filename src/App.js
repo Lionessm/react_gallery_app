@@ -4,6 +4,7 @@ import {
 } from 'react-router-dom';
 import './App.css';
 import PhotoContainer from "./PhotoContainer";
+import SearchForm from "./SearchForm";
 
 
 export default class App extends Component {
@@ -15,6 +16,7 @@ export default class App extends Component {
         return (
             <BrowserRouter>
                 <div className="container">
+                    <SearchForm/>
                     <nav className="main-nav">
                         <ul>
                             <li><NavLink to='/cats'>Cats</NavLink></li>
