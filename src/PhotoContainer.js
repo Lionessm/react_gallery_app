@@ -10,6 +10,8 @@ const PhotoContainer = (props) => {
     // Set document title.
     document.title = searchQuery;
 
+    console.log("apiKey", apiKey);
+
     // Get the photos from the API in a sync way.
     const res = request('GET', `https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=${apiKey}&per_page=25&tags=${searchQuery}&format=json&nojsoncallback=1`);
     const response = res.getBody();

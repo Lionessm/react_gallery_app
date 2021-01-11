@@ -1,2 +1,4 @@
-const apiKey = '66c6cdb2316ce5fd463a5ae18a04dad4';
+import 'dotenv/config';
+
+const apiKey = process.env.REACT_APP_API_KEY;
 export default apiKey;

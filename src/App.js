@@ -6,11 +6,13 @@ import './App.css';
 import PhotoContainer from "./PhotoContainer";
 import SearchForm from "./SearchForm";
 import Nav from "./MainNav";
-
+import apiKey from "./config";
 
 export default class App extends Component {
     constructor() {
         super();
+
+        console.log("apiKey", apiKey);
     }
 
     render() {

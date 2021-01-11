@@ -20,9 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="76d9d459-5e13-40f6-8673-c81167dece1e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.env-example" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/General.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/General.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MainNav.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainNav.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PhotoContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/PhotoContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,10 +66,11 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
@@ -110,9 +117,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="428" y="226" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604922511955">
-      <screen x="0" y="23" width="1440" height="789" />
+    <state x="428" y="223" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1610388223352">
+      <screen x="0" y="23" width="1440" height="779" />
     </state>
+    <state x="428" y="223" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.779@0.23.1440.779" timestamp="1610388223352" />
     <state x="428" y="226" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.789@0.23.1440.789" timestamp="1604922511955" />
     <state x="316" y="255" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1604924943526">
       <screen x="0" y="23" width="1440" height="789" />
@@ -133,7 +141,6 @@
         <line-breakpoint enabled="true" log-message="true" suspend="NONE" type="javascript">
           <url>file://$PROJECT_DIR$/src/App.js</url>
           <line>2</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
