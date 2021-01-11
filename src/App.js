@@ -1,8 +1,11 @@
 import React, {Component} from 'react';
-import {BrowserRouter, Route, Switch} from 'react-router-dom';
+import {
+    BrowserRouter, Route
+} from 'react-router-dom';
 import './App.css';
-import NotFound from "./NotFound";
-import General from "./General";
+import PhotoContainer from "./PhotoContainer";
+import SearchForm from "./SearchForm";
+import Nav from "./MainNav";
 
 
 export default class App extends Component {
@@ -14,14 +17,12 @@ export default class App extends Component {
         return (
             <BrowserRouter>
                 <div className="container">
-                <Switch>
-                    <Route exact path='/' component={General} />
-                    <Route path='/search/:query' component={General} />
-                    <Route component={NotFound}/>
-                </Switch>
+                    <SearchForm/>
+                    <Nav/>
+                    <Route path="/:searchQuery" component={PhotoContainer}/>
+                    <Route exact path="/" component={PhotoContainer}/>
                 </div>
             </BrowserRouter>
         );
     }
 }
-

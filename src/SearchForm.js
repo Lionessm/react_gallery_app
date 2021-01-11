@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-
+import {Redirect} from 'react-router-dom';
 
 export default class SearchForm extends Component {
 
@@ -13,10 +13,9 @@ export default class SearchForm extends Component {
 
     handleSubmit = e => {
         e.preventDefault();
-        console.log("this.state.searchText "  , this.state.searchText)
-        this.props.onSearch(this.state.searchText);
 
-        e.currentTarget.reset();
+        // Redirect to the search term.
+        window.location = '/' + this.state.searchText;
     }
 
     render() {
