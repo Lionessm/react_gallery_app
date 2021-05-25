@@ -1,3 +1,9 @@
+# My React Gallery App
+
+I used the Create React App tool to build a fast and lightweight gallery app with a modern approach.
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
